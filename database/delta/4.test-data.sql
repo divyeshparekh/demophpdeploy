@@ -1,10 +1,10 @@
-INSERT INTO `settings` (`id`, `name`, `value`) VALUES
+INSERT INTO `test` (`id`, `name`, `value`) VALUES
 (NULL, 'language', 'EN'),
 (NULL, 'currency', 'EUR');
 
 --//@UNDO
  
-DELETE FROM `settings`
+DELETE FROM `test`
 WHERE `name` IN ('language', 'currency');
  
 --//
