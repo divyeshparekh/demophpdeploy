@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="logs">
+ 
+    <target name="logs">
+        <echo msg="Creating logs directory..." />
+        <mkdir dir="${project.basedir}/logs" />
+ 
+        <echo msg="Creating application.log file..." />
+        <touch file="${project.basedir}/logs/application.log" />
+        <chown file="${project.basedir}/logs/application.log" user="www-data.www-data" verbose="true" />
+    </target>
+ 
+</project>

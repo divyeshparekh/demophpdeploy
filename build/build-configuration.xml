@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="configuration">
+ 
+    <target name="configuration">
+        <echo msg="Building configuration..." />
+ 
+        <mkdir dir="${project.basedir}/conf" />
+        <copy todir="${project.basedir}/conf/" overwrite="true">
+            <filelist dir="${project.basedir}/build/templates/" files="application.ini.build" />
+            <mapper type="regexp" from="^(.*).build$" to="\1"/>
+ 
+            <filterchain>
+                <expandproperties />
+            </filterchain>
+        </copy>
+    </target>
+ 
+</project>

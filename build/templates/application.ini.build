@@ -1,0 +1,10 @@
+db.host = "${db.host}"
+db.user = "${db.user}"
+db.password = "${db.password}"
+db.database = "${db.database}"
+ 
+log.level = "3"
+log.file = "logs/application.log"
+ 
+facebook.appId = "${facebook.appId}"
+facebook.secret = "${facebook.secret}"
